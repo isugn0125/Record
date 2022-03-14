@@ -1,4 +1,4 @@
-*** yum 가능 ***
+### yum 가능 ###
 
 1. yum install httpd
 => /etc/httpd/ 경로로 다운로드 됨
@@ -37,7 +37,7 @@
     vhosts 설정 부분에
     JkMount /* worker1
     
-*** yum 불가능 ***
+### yum 불가능 ###
 
 apr, apr-util, expat, httpd, openssl, pcre, tomcat-connectors, zlib 각 의존 버전에 맞는 버전 필요
 
