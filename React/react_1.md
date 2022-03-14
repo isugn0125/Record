@@ -8,3 +8,4 @@ React Core Syntax & JSX
 3. cd project_name
 4. npm start
 5. localhost:3000 포트로 열림
+프로젝트 폴더 > package.json 파일 : 버전 정리 파일
