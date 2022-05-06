@@ -1,3 +1,3 @@
-# Test
+# 링크
 
-* [경로 호출](Linux/명령어.md)
+* [Linux 명령어](Linux/명령어.md)
