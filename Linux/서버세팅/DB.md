@@ -5,30 +5,30 @@
 * gcc-c++ 설치 체크
 
 * 의존성 ncurses 설치
-* rpm -ivh ncurses-devel-5.9-14.20130511.el7_4.x86_64.rpm
+  * rpm -ivh ncurses-devel-5.9-14.20130511.el7_4.x86_64.rpm
 
 * mysql 소스 압축해제
-* tar xvf mysql-5.1.73.tar.gz
-* cd mysql-5.1.73/
+  * tar xvf mysql-5.1.73.tar.gz
+  * cd mysql-5.1.73/
 
 * mysql 빌드, 설치
-* ex) ./configure --prefix=/usr/local/mysql --with-mysqld-user="mysql" --localstatedir=/usr/local/mysql/data --sysconfdir=/etc --with-mysqld-ldflags=-all-static --with-client-ldflags=-all-static --without-debug --enable-shared --enable-assembler --with-charset=utf8 --with-readline --enable-thread-safe-client --with-plugins=innobase --with-extra-charsets=all
-* make && make install
+  * ex) ./configure --prefix=/usr/local/mysql --with-mysqld-user="mysql" --localstatedir=/usr/local/mysql/data --sysconfdir=/etc --with-mysqld-ldflags=-all-static -- with-client-ldflags=-all-static --without-debug --enable-shared --enable-assembler --with-charset=utf8 --with-readline --enable-thread-safe-client --with-plugins=innobase --with-extra-charsets=all
+  * make && make install
 
 * 기본DB생성
-* /usr/local/mysql/bin/mysql_install_db --user=mysql --datadir=/usr/local/mysql/data
+  * /usr/local/mysql/bin/mysql_install_db --user=mysql --datadir=/usr/local/mysql/data
 
 * 실행 확인 
-* /usr/local/mysql/bin/mysql.server start
-* /usr/local/mysql/bin/mysql.server stop
+  * /usr/local/mysql/bin/mysql.server start
+  * /usr/local/mysql/bin/mysql.server stop
 
 * 서비스 등록
-* cp /usr/local/mysql/bin/mysql.server /etc/init.d/mysqld
-* systemctl daemon-reload
-* systemctl start mysqld
+  * cp /usr/local/mysql/bin/mysql.server /etc/init.d/mysqld
+  * systemctl daemon-reload
+  * systemctl start mysqld
 
 * root 비번 변경
-* ex) /usr/local/mysql/bin/mysqladmin -u root password '1234'
+  * ex) /usr/local/mysql/bin/mysqladmin -u root password '1234'
 
 * 참고용 my.cnf -> UTF8, 테이블 대소문자 세팅할것, 덤프 오류시 max_allowed_packet 값 늘릴것
 ```
