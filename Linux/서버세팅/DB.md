@@ -1,5 +1,15 @@
 ### 외부통신 가능 ###
 
+* mysql 설치 체크
+ * mysql --version
+
+* mysql 설치
+ * yum -y install http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+ * yum -y install mysql-community-server
+
+* mysql을 실행하면 임시 비밀번호가 생성되고 mysqld.log 파일 안에서 임시 비밀번호를 확인 할 수 있습니다.
+
+* mysql 설정파일 생성 위치 /etc/my.cnf
 ### 외부통신 불가능 ###
 
 * gcc-c++ 설치 체크
