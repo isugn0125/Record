@@ -1,11 +1,11 @@
 ### 외부통신 가능 ###
 
 * mysql 설치 체크
- * mysql --version
+  * mysql --version
 
 * mysql 설치
- * yum -y install rpm주소
- * yum -y install mysql-community-server
+  * yum -y install rpm주소
+  * yum -y install mysql-community-server
 
 * mysql을 실행하면 임시 비밀번호가 생성되고 mysqld.log 파일 안에서 임시 비밀번호를 확인 할 수 있습니다.
 
