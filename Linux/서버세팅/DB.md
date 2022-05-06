@@ -80,4 +80,4 @@ pid-file=/var/run/mysqld/mysql.log
 default-character-set=utf8
 ```
 * bundle 설치 시
- * client, community, devel 설치
+  * client, community, devel 설치
