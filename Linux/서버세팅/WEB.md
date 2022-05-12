@@ -123,7 +123,7 @@ pcre-8.42.tar.gz 로 다운 받았음
 
 서비스 파일 생성
 $ vi /usr/lib/systemd/system/apache.service
-
+```
 [Unit]
 Description=apache
 After=network.target syslog.target
@@ -157,3 +157,4 @@ $ systemctl status apache
 
 서비스 자동 시작
 $ systemctl enable apache
+```
