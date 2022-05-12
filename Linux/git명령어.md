@@ -55,7 +55,7 @@ Git 처음 push 할때 설정해주어야하므로
 `git push --set-upstream origin (branch name)`     
 을 해주어야한다
 
-##### 후에 푸쉬하기전 커밋은 필수 !!!
+##### 후에 푸쉬하기전 커밋은 필수
 
 SourceTree에서 깃 패스워드를 까먹거나 잘 되지 않을 시 C:\Users\[계정이름]\AppData\Local\Atlassian\SourceTree\ 에 passwd 파일을 삭제한 후 다시 접속하여 아이디와 패스워드를 입력한다.      
 
